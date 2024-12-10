@@ -15,7 +15,7 @@ namespace FundamentosNetCore
             // 
             // button1
             // 
-            button1.Location = new Point(79, 117);
+            button1.Location = new Point(87, 168);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
