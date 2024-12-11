@@ -162,9 +162,14 @@ namespace FundamentosNetCore
 
         private void btnCambiarColor_Click(object sender, EventArgs e)
         {
+
             int rojo = int.Parse(txtRed.Text);
             int verde = int.Parse(txtGreen.Text);
             int azul = int.Parse(txtBlue.Text);
+            if(rojo < 0 || rojo >255)
+            {
+                MessageBox.Show("Valor superado","Titulo");
+            }
             this.BackColor = Color.FromArgb(rojo, verde, azul);
         }
     }
