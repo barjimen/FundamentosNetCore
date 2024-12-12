@@ -26,14 +26,22 @@ namespace FundamentosNetCore
             {
                 if (!cadena.Contains("@"))
                     this.lblResultado.Text = "No hay @ en la cedana";
-                else if (cadena.StartsWith("@") || cadena.EndsWith("@"))
+                else if (cadena.IndexOf("@") == 0 || cadena.EndsWith("@"))
                     this.lblResultado.Text = "No se puede poner @ nu al principio ni al final";
                 else if (!cadena.Contains("."))
                     this.lblResultado.Text = "Necesitas un punto";
-                else if (!(cadena.IndexOf("@") < cadena.IndexOf(".")))
+                else if (cadena.LastIndexOf(".") < cadena.IndexOf("@"))
                     this.lblResultado.Text = "Neceistas . despues de @";
                 else
-                    this.lblResultado.Text = "Email válido";
+                {
+                    int ultimoPunti = cadena.LastIndexOf('.');
+                    string dominio = cadena.Substring(ultimoPunti + 1);
+                    if(dominio.Length >= 2 && dominio.Length <= 4)
+                        this.lblResultado.Text = "Email válido";
+                    else
+                        this.lblResultado.Text = "Email Inválido";
+                }
+                
             }
         }
     }
