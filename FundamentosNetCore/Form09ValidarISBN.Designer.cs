@@ -1,6 +1,6 @@
 ﻿namespace FundamentosNetCore
 {
-    partial class Form06ValidarMail
+    partial class Form09ValidarISBN
     {
         /// <summary>
         /// Required designer variable.
@@ -29,59 +29,61 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            txtEmail = new TextBox();
-            btnValidarMail = new Button();
+            txtIsbn = new TextBox();
+            btnValidarIsbn = new Button();
             lblResultado = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(33, 19);
+            label1.Location = new Point(24, 24);
             label1.Name = "label1";
-            label1.Size = new Size(213, 32);
+            label1.Size = new Size(184, 32);
             label1.TabIndex = 0;
-            label1.Text = "Introduzca un mail";
+            label1.Text = "Introduzca ISBN";
             // 
-            // txtEmail
+            // txtIsbn
             // 
-            txtEmail.Location = new Point(40, 51);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(410, 39);
-            txtEmail.TabIndex = 1;
+            txtIsbn.Location = new Point(29, 61);
+            txtIsbn.Name = "txtIsbn";
+            txtIsbn.Size = new Size(313, 39);
+            txtIsbn.TabIndex = 1;
+            txtIsbn.Text = "8441513929";
+            txtIsbn.TextAlign = HorizontalAlignment.Center;
             // 
-            // btnValidarMail
+            // btnValidarIsbn
             // 
-            btnValidarMail.Location = new Point(40, 103);
-            btnValidarMail.Name = "btnValidarMail";
-            btnValidarMail.Size = new Size(410, 49);
-            btnValidarMail.TabIndex = 2;
-            btnValidarMail.Text = "Validar Email";
-            btnValidarMail.UseVisualStyleBackColor = true;
-            btnValidarMail.Click += btnValidarMail_Click;
+            btnValidarIsbn.Location = new Point(30, 117);
+            btnValidarIsbn.Name = "btnValidarIsbn";
+            btnValidarIsbn.Size = new Size(312, 51);
+            btnValidarIsbn.TabIndex = 2;
+            btnValidarIsbn.Text = "Validar ISBN";
+            btnValidarIsbn.UseVisualStyleBackColor = true;
+            btnValidarIsbn.Click += btnValidarIsbn_Click;
             // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(41, 170);
+            lblResultado.Location = new Point(31, 186);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(144, 32);
             lblResultado.TabIndex = 3;
             lblResultado.Text = "lblResultado";
             // 
-            // Form06ValidarMail
+            // Form09ValidarISBN
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(502, 230);
+            ClientSize = new Size(410, 239);
             Controls.Add(lblResultado);
-            Controls.Add(btnValidarMail);
-            Controls.Add(txtEmail);
+            Controls.Add(btnValidarIsbn);
+            Controls.Add(txtIsbn);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(6);
-            Name = "Form06ValidarMail";
-            Text = "Form06ValidarMail";
+            Name = "Form09ValidarISBN";
+            Text = "Form09ValidarISBN";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -89,8 +91,8 @@
         #endregion
 
         private Label label1;
-        private TextBox txtEmail;
-        private Button btnValidarMail;
+        private TextBox txtIsbn;
+        private Button btnValidarIsbn;
         private Label lblResultado;
     }
 }

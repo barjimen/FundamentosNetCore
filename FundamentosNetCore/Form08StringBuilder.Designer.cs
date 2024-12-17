@@ -30,69 +30,69 @@
         {
             label1 = new Label();
             txtTexto = new RichTextBox();
+            btnInvertirString = new Button();
+            btnInvertirStringBuilder = new Button();
             lblTiempo = new Label();
-            btnString = new Button();
-            btnBuilder = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(52, 28);
+            label1.Location = new Point(24, 17);
             label1.Name = "label1";
-            label1.Size = new Size(521, 40);
+            label1.Size = new Size(303, 32);
             label1.TabIndex = 0;
             label1.Text = "Copie el texto para trabajar";
             // 
             // txtTexto
             // 
-            txtTexto.Location = new Point(52, 71);
+            txtTexto.Location = new Point(29, 54);
             txtTexto.Name = "txtTexto";
-            txtTexto.Size = new Size(853, 214);
+            txtTexto.Size = new Size(630, 291);
             txtTexto.TabIndex = 1;
             txtTexto.Text = "";
+            // 
+            // btnInvertirString
+            // 
+            btnInvertirString.Location = new Point(35, 407);
+            btnInvertirString.Name = "btnInvertirString";
+            btnInvertirString.Size = new Size(224, 71);
+            btnInvertirString.TabIndex = 2;
+            btnInvertirString.Text = "Invertir String";
+            btnInvertirString.UseVisualStyleBackColor = true;
+            btnInvertirString.Click += btnInvertirString_Click;
+            // 
+            // btnInvertirStringBuilder
+            // 
+            btnInvertirStringBuilder.Location = new Point(395, 407);
+            btnInvertirStringBuilder.Name = "btnInvertirStringBuilder";
+            btnInvertirStringBuilder.Size = new Size(264, 71);
+            btnInvertirStringBuilder.TabIndex = 3;
+            btnInvertirStringBuilder.Text = "Invertir StringBuilder";
+            btnInvertirStringBuilder.UseVisualStyleBackColor = true;
+            btnInvertirStringBuilder.Click += btnInvertirStringBuilder_Click;
             // 
             // lblTiempo
             // 
             lblTiempo.AutoSize = true;
-            lblTiempo.Location = new Point(52, 297);
+            lblTiempo.Location = new Point(30, 358);
             lblTiempo.Name = "lblTiempo";
-            lblTiempo.Size = new Size(341, 40);
-            lblTiempo.TabIndex = 2;
-            lblTiempo.Text = "Tiempo del proceso";
-            // 
-            // btnString
-            // 
-            btnString.Location = new Point(52, 357);
-            btnString.Name = "btnString";
-            btnString.Size = new Size(365, 90);
-            btnString.TabIndex = 3;
-            btnString.Text = "Invertir String";
-            btnString.UseVisualStyleBackColor = true;
-            btnString.Click += btnString_Click;
-            // 
-            // btnBuilder
-            // 
-            btnBuilder.Location = new Point(536, 357);
-            btnBuilder.Name = "btnBuilder";
-            btnBuilder.Size = new Size(369, 90);
-            btnBuilder.TabIndex = 4;
-            btnBuilder.Text = "Invertir con StringBuilder";
-            btnBuilder.UseVisualStyleBackColor = true;
-            btnBuilder.Click += btnBuilder_Click;
+            lblTiempo.Size = new Size(121, 32);
+            lblTiempo.TabIndex = 4;
+            lblTiempo.Text = "lblTiempo";
             // 
             // Form08StringBuilder
             // 
-            AutoScaleDimensions = new SizeF(18F, 40F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(975, 513);
-            Controls.Add(btnBuilder);
-            Controls.Add(btnString);
+            ClientSize = new Size(688, 490);
             Controls.Add(lblTiempo);
+            Controls.Add(btnInvertirStringBuilder);
+            Controls.Add(btnInvertirString);
             Controls.Add(txtTexto);
             Controls.Add(label1);
-            Font = new Font("Cascadia Mono", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(7, 6, 7, 6);
+            Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(6);
             Name = "Form08StringBuilder";
             Text = "Form08StringBuilder";
             ResumeLayout(false);
@@ -103,8 +103,8 @@
 
         private Label label1;
         private RichTextBox txtTexto;
+        private Button btnInvertirString;
+        private Button btnInvertirStringBuilder;
         private Label lblTiempo;
-        private Button btnString;
-        private Button btnBuilder;
     }
 }

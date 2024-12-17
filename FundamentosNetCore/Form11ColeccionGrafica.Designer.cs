@@ -28,116 +28,114 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lstElementos = new ListBox();
             label1 = new Label();
-            txtNuevo = new TextBox();
+            lstElementos = new ListBox();
             label2 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            txtNuevoElemento = new TextBox();
+            btnInsertar = new Button();
+            btnEliminar = new Button();
+            btnBorrarTodo = new Button();
             lblItemSeleccionado = new Label();
             lblIndexSeleccionado = new Label();
             SuspendLayout();
             // 
-            // lstElementos
-            // 
-            lstElementos.FormattingEnabled = true;
-            lstElementos.Location = new Point(36, 82);
-            lstElementos.Margin = new Padding(6);
-            lstElementos.Name = "lstElementos";
-            lstElementos.Size = new Size(314, 204);
-            lstElementos.TabIndex = 0;
-            lstElementos.SelectedIndexChanged += lstElementos_SelectedIndexChanged;
-            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(36, 34);
-            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Location = new Point(28, 24);
             label1.Name = "label1";
-            label1.Size = new Size(178, 42);
-            label1.TabIndex = 1;
-            label1.Text = "Elementos:";
+            label1.Size = new Size(125, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Elementos";
             // 
-            // txtNuevo
+            // lstElementos
             // 
-            txtNuevo.Location = new Point(403, 82);
-            txtNuevo.Name = "txtNuevo";
-            txtNuevo.Size = new Size(388, 41);
-            txtNuevo.TabIndex = 2;
+            lstElementos.FormattingEnabled = true;
+            lstElementos.Location = new Point(33, 56);
+            lstElementos.Name = "lstElementos";
+            lstElementos.Size = new Size(247, 292);
+            lstElementos.TabIndex = 1;
+            lstElementos.SelectedIndexChanged += lstElementos_SelectedIndexChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(403, 34);
+            label2.Location = new Point(334, 17);
             label2.Name = "label2";
-            label2.Size = new Size(253, 42);
-            label2.TabIndex = 3;
-            label2.Text = "Nuevo Elemento";
+            label2.Size = new Size(194, 32);
+            label2.TabIndex = 2;
+            label2.Text = "Nuevo elemento";
             // 
-            // button1
+            // txtNuevoElemento
             // 
-            button1.Location = new Point(403, 129);
-            button1.Name = "button1";
-            button1.Size = new Size(388, 50);
-            button1.TabIndex = 4;
-            button1.Text = "Insertar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            txtNuevoElemento.Location = new Point(346, 52);
+            txtNuevoElemento.Name = "txtNuevoElemento";
+            txtNuevoElemento.Size = new Size(275, 39);
+            txtNuevoElemento.TabIndex = 3;
             // 
-            // button2
+            // btnInsertar
             // 
-            button2.Location = new Point(403, 190);
-            button2.Name = "button2";
-            button2.Size = new Size(388, 42);
-            button2.TabIndex = 5;
-            button2.Text = "Eliminar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnInsertar.Location = new Point(349, 109);
+            btnInsertar.Name = "btnInsertar";
+            btnInsertar.Size = new Size(212, 59);
+            btnInsertar.TabIndex = 4;
+            btnInsertar.Text = "Insertar";
+            btnInsertar.UseVisualStyleBackColor = true;
+            btnInsertar.Click += btnInsertar_Click;
             // 
-            // button3
+            // btnEliminar
             // 
-            button3.Location = new Point(403, 243);
-            button3.Name = "button3";
-            button3.Size = new Size(388, 43);
-            button3.TabIndex = 6;
-            button3.Text = "Eliminar todo";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btnEliminar.Location = new Point(354, 184);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(207, 61);
+            btnEliminar.TabIndex = 5;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // btnBorrarTodo
+            // 
+            btnBorrarTodo.Location = new Point(354, 259);
+            btnBorrarTodo.Name = "btnBorrarTodo";
+            btnBorrarTodo.Size = new Size(207, 73);
+            btnBorrarTodo.TabIndex = 6;
+            btnBorrarTodo.Text = "Borrar todo";
+            btnBorrarTodo.UseVisualStyleBackColor = true;
+            btnBorrarTodo.Click += btnBorrarTodo_Click;
             // 
             // lblItemSeleccionado
             // 
             lblItemSeleccionado.AutoSize = true;
-            lblItemSeleccionado.Location = new Point(36, 292);
+            lblItemSeleccionado.Location = new Point(33, 360);
             lblItemSeleccionado.Name = "lblItemSeleccionado";
-            lblItemSeleccionado.Size = new Size(104, 42);
+            lblItemSeleccionado.Size = new Size(229, 32);
             lblItemSeleccionado.TabIndex = 7;
-            lblItemSeleccionado.Text = "label3";
+            lblItemSeleccionado.Text = "lblItemSeleccionado";
             // 
             // lblIndexSeleccionado
             // 
             lblIndexSeleccionado.AutoSize = true;
-            lblIndexSeleccionado.Location = new Point(36, 353);
+            lblIndexSeleccionado.Location = new Point(33, 408);
             lblIndexSeleccionado.Name = "lblIndexSeleccionado";
-            lblIndexSeleccionado.Size = new Size(104, 42);
+            lblIndexSeleccionado.Size = new Size(239, 32);
             lblIndexSeleccionado.TabIndex = 8;
-            lblIndexSeleccionado.Text = "label3";
+            lblIndexSeleccionado.Text = "lblIndexSeleccionado";
             // 
             // Form11ColeccionGrafica
             // 
-            AutoScaleDimensions = new SizeF(17F, 40F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(857, 452);
+            ClientSize = new Size(646, 466);
             Controls.Add(lblIndexSeleccionado);
             Controls.Add(lblItemSeleccionado);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnBorrarTodo);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnInsertar);
+            Controls.Add(txtNuevoElemento);
             Controls.Add(label2);
-            Controls.Add(txtNuevo);
-            Controls.Add(label1);
             Controls.Add(lstElementos);
-            Font = new Font("Sitka Small", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Controls.Add(label1);
+            Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(6);
             Name = "Form11ColeccionGrafica";
             Text = "Form11ColeccionGrafica";
@@ -147,13 +145,13 @@
 
         #endregion
 
-        private ListBox lstElementos;
         private Label label1;
-        private TextBox txtNuevo;
+        private ListBox lstElementos;
         private Label label2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private TextBox txtNuevoElemento;
+        private Button btnInsertar;
+        private Button btnEliminar;
+        private Button btnBorrarTodo;
         private Label lblItemSeleccionado;
         private Label lblIndexSeleccionado;
     }

@@ -29,55 +29,57 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            txtSumar = new TextBox();
+            txtNumeros = new TextBox();
+            btnSumarNumeros = new Button();
             lblResultado = new Label();
-            button1 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(62, 31);
+            label1.Location = new Point(47, 18);
             label1.Name = "label1";
-            label1.Size = new Size(136, 20);
+            label1.Size = new Size(227, 32);
             label1.TabIndex = 0;
-            label1.Text = "Introduza Numeros";
+            label1.Text = "Introduzca números";
             // 
-            // txtSumar
+            // txtNumeros
             // 
-            txtSumar.Location = new Point(62, 54);
-            txtSumar.Name = "txtSumar";
-            txtSumar.Size = new Size(185, 27);
-            txtSumar.TabIndex = 1;
+            txtNumeros.Location = new Point(48, 54);
+            txtNumeros.Name = "txtNumeros";
+            txtNumeros.Size = new Size(229, 39);
+            txtNumeros.TabIndex = 1;
+            // 
+            // btnSumarNumeros
+            // 
+            btnSumarNumeros.Location = new Point(50, 108);
+            btnSumarNumeros.Name = "btnSumarNumeros";
+            btnSumarNumeros.Size = new Size(227, 55);
+            btnSumarNumeros.TabIndex = 2;
+            btnSumarNumeros.Text = "Sumar números";
+            btnSumarNumeros.UseVisualStyleBackColor = true;
+            btnSumarNumeros.Click += btnSumarNumeros_Click;
             // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(62, 141);
+            lblResultado.Location = new Point(51, 178);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(50, 20);
-            lblResultado.TabIndex = 2;
-            lblResultado.Text = "label2";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(62, 87);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 3;
-            button1.Text = "Sumar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            lblResultado.Size = new Size(144, 32);
+            lblResultado.TabIndex = 3;
+            lblResultado.Text = "lblResultado";
             // 
             // Form07SumarNumerosString
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(400, 213);
-            Controls.Add(button1);
+            ClientSize = new Size(522, 240);
             Controls.Add(lblResultado);
-            Controls.Add(txtSumar);
+            Controls.Add(btnSumarNumeros);
+            Controls.Add(txtNumeros);
             Controls.Add(label1);
+            Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(6, 6, 6, 6);
             Name = "Form07SumarNumerosString";
             Text = "Form07SumarNumerosString";
             ResumeLayout(false);
@@ -87,8 +89,8 @@
         #endregion
 
         private Label label1;
-        private TextBox txtSumar;
+        private TextBox txtNumeros;
+        private Button btnSumarNumeros;
         private Label lblResultado;
-        private Button button1;
     }
 }

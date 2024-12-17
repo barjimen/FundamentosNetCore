@@ -19,8 +19,9 @@ namespace FundamentosNetCore
 
         private void btnRun_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 255; i++)
+            for (int i = 0; i <= 255; i++)
             {
+                //CONVERTIMOS EL VALOR DE i A CHAR
                 char caracter = (char)i;
                 if (char.IsLetter(caracter) == true)
                 {
@@ -30,13 +31,13 @@ namespace FundamentosNetCore
                 {
                     this.txtNumeros.Text += caracter;
                 }
-                else if (char.IsSymbol(caracter) == true)
-                {
-                    this.txtSym.Text += caracter;
-                }
                 else if (char.IsPunctuation(caracter) == true)
                 {
                     this.txtPuntuacion.Text += caracter;
+                }
+                else if (char.IsSymbol(caracter) == true)
+                {
+                    this.txtSimbolos.Text += caracter;
                 }
             }
         }

@@ -4,36 +4,24 @@ namespace FundamentosNetCore
     {
         public Form1()
         {
-            this.Text = "Hola";
-            this.SuspendLayout();
+            InitializeComponent();
+
         }
 
-        private void InitializeComponent()
+        private void btnPulsar_Click(object sender, EventArgs e)
         {
-            button1 = new Button();
-            SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(87, 168);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // Form1
-            // 
-            ClientSize = new Size(282, 253);
-            Controls.Add(button1);
-            Name = "Form1";
-            ResumeLayout(false);
-        }
+            //SOLO ESCRIBIMOS AQUI
+            this.txtNombre.Location = new Point(20, 10);
+            this.txtNombre.Text = "Soy un string";
+            this.txtNombre.Width = 220;
+            this.txtNombre.TextAlign = HorizontalAlignment.Right;
+            this.btnPulsar.BackColor =
+                Color.LightGreen;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
+            //CUALQUIER OBJETO A STRING            
+            int numero = 88;
+            string texto = numero.ToString();
+            texto = btnPulsar.ToString();
         }
     }
 }

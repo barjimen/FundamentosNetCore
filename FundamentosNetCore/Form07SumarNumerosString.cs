@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace FundamentosNetCore
 {
@@ -17,17 +18,23 @@ namespace FundamentosNetCore
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSumarNumeros_Click(object sender, EventArgs e)
         {
-            string textoNumeros = this.txtSumar.Text;
+            string textoNumeros = this.txtNumeros.Text;
             int suma = 0;
             for (int i = 0; i < textoNumeros.Length; i++)
             {
+                //RECUPERAMOS CADA UNO DE LOS CARACTERES
                 char caracter = textoNumeros[i];
-                int numb = int.Parse(caracter.ToString());
-                suma += numb;
+                //CONVERTIMOS EL CARACTER A NUMERO
+                //CON ESTA CONVERSION ESTA RECUPERANDO EL VALOR
+                //ASCII DEL NUMERO
+                //int numero = caracter;
+                //int numero = int.Parse(caracter.ToString());
+                int numero = Convert.ToInt32(caracter.ToString());
+                suma += numero;
             }
-            this.lblResultado.Text = suma.ToString();
+            this.lblResultado.Text = "La suma es " + suma;
         }
     }
 }

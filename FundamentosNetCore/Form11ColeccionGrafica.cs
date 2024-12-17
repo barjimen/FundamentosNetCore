@@ -17,32 +17,37 @@ namespace FundamentosNetCore
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnInsertar_Click(object sender, EventArgs e)
         {
-            string elemento = this.txtNuevo.Text;
-            this.lstElementos.Items.Add(elemento);
+            string elem = this.txtNuevoElemento.Text;
+            this.lstElementos.Items.Add(elem);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //string elementoSeleccionado = this.lstElementos.SelectedItem.ToString();
+            //string elementoSeleccionado =
+            //    this.lstElementos.SelectedItem.ToString();
             //this.lstElementos.Items.Remove(elementoSeleccionado);
-            //Para apartados gráficos.
-            int indexSeleccionado = this.lstElementos.SelectedIndex;
+            int indexSeleccionado =
+                this.lstElementos.SelectedIndex;
             this.lstElementos.Items.RemoveAt(indexSeleccionado);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnBorrarTodo_Click(object sender, EventArgs e)
         {
             this.lstElementos.Items.Clear();
         }
 
         private void lstElementos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(this.lstElementos.SelectedIndex != -1)
+            //DEBERIAMOS PREGUNTAR EN ESTE EVENTO
+            //SI TENEMOS ELEMENTOS SELECCIONADOS ANTES DE JUGAR
+            if (this.lstElementos.SelectedIndex != -1)
             {
-                this.lblIndexSeleccionado.Text = "Index seleccionado: " + this.lstElementos.SelectedIndex;
-                this.lblItemSeleccionado.Text = "Item seleccionado: " + this.lstElementos.SelectedItem;
+                this.lblIndexSeleccionado.Text =
+                    "Index seleccionado: " + this.lstElementos.SelectedIndex;
+                this.lblItemSeleccionado.Text =
+                    "Item seleccionado: " + this.lstElementos.SelectedItem;
             }
         }
     }

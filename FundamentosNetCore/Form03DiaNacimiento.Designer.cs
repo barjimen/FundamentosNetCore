@@ -28,96 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtD = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            label1 = new Label();
             txtDia = new TextBox();
+            label2 = new Label();
             txtMes = new TextBox();
-            txtAño = new TextBox();
+            Lablel33 = new Label();
+            txtAnyo = new TextBox();
             btnCalcularDiaNacimiento = new Button();
             lblDiaSemana = new Label();
             SuspendLayout();
             // 
-            // txtD
+            // label1
             // 
-            txtD.AutoSize = true;
-            txtD.Location = new Point(33, 40);
-            txtD.Name = "txtD";
-            txtD.Size = new Size(32, 20);
-            txtD.TabIndex = 0;
-            txtD.Text = "Día";
+            label1.AutoSize = true;
+            label1.Location = new Point(32, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(49, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Día";
+            // 
+            // txtDia
+            // 
+            txtDia.Location = new Point(38, 53);
+            txtDia.Name = "txtDia";
+            txtDia.Size = new Size(100, 39);
+            txtDia.TabIndex = 1;
+            txtDia.Text = "15";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(33, 127);
+            label2.Location = new Point(32, 106);
             label2.Name = "label2";
-            label2.Size = new Size(36, 20);
-            label2.TabIndex = 1;
+            label2.Size = new Size(59, 32);
+            label2.TabIndex = 2;
             label2.Text = "Mes";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(33, 200);
-            label3.Name = "label3";
-            label3.Size = new Size(36, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Año";
-            // 
-            // txtDia
-            // 
-            txtDia.Location = new Point(33, 63);
-            txtDia.Name = "txtDia";
-            txtDia.Size = new Size(125, 27);
-            txtDia.TabIndex = 3;
             // 
             // txtMes
             // 
-            txtMes.Location = new Point(33, 150);
+            txtMes.Location = new Point(38, 141);
             txtMes.Name = "txtMes";
-            txtMes.Size = new Size(125, 27);
-            txtMes.TabIndex = 4;
+            txtMes.Size = new Size(100, 39);
+            txtMes.TabIndex = 3;
+            txtMes.Text = "6";
             // 
-            // txtAño
+            // Lablel33
             // 
-            txtAño.Location = new Point(33, 223);
-            txtAño.Name = "txtAño";
-            txtAño.Size = new Size(125, 27);
-            txtAño.TabIndex = 5;
+            Lablel33.AutoSize = true;
+            Lablel33.Location = new Point(32, 188);
+            Lablel33.Name = "Lablel33";
+            Lablel33.Size = new Size(57, 32);
+            Lablel33.TabIndex = 4;
+            Lablel33.Text = "Año";
+            // 
+            // txtAnyo
+            // 
+            txtAnyo.Location = new Point(32, 224);
+            txtAnyo.Name = "txtAnyo";
+            txtAnyo.Size = new Size(100, 39);
+            txtAnyo.TabIndex = 5;
+            txtAnyo.Text = "1997";
             // 
             // btnCalcularDiaNacimiento
             // 
-            btnCalcularDiaNacimiento.Location = new Point(33, 286);
+            btnCalcularDiaNacimiento.Location = new Point(210, 20);
             btnCalcularDiaNacimiento.Name = "btnCalcularDiaNacimiento";
-            btnCalcularDiaNacimiento.Size = new Size(125, 29);
+            btnCalcularDiaNacimiento.Size = new Size(231, 125);
             btnCalcularDiaNacimiento.TabIndex = 6;
-            btnCalcularDiaNacimiento.Text = "button1";
+            btnCalcularDiaNacimiento.Text = "Calcular día nacimiento";
             btnCalcularDiaNacimiento.UseVisualStyleBackColor = true;
             btnCalcularDiaNacimiento.Click += btnCalcularDiaNacimiento_Click;
             // 
             // lblDiaSemana
             // 
             lblDiaSemana.AutoSize = true;
-            lblDiaSemana.Location = new Point(250, 150);
+            lblDiaSemana.Location = new Point(254, 190);
             lblDiaSemana.Name = "lblDiaSemana";
-            lblDiaSemana.Size = new Size(87, 20);
+            lblDiaSemana.Size = new Size(160, 32);
             lblDiaSemana.TabIndex = 7;
-            lblDiaSemana.Text = "Dia semana";
+            lblDiaSemana.Text = "lblDiaSemana";
             // 
             // Form03DiaNacimiento
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(583, 275);
             Controls.Add(lblDiaSemana);
             Controls.Add(btnCalcularDiaNacimiento);
-            Controls.Add(txtAño);
+            Controls.Add(txtAnyo);
+            Controls.Add(Lablel33);
             Controls.Add(txtMes);
-            Controls.Add(txtDia);
-            Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(txtD);
+            Controls.Add(txtDia);
+            Controls.Add(label1);
+            Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(6);
             Name = "Form03DiaNacimiento";
             Text = "Form03DiaNacimiento";
             ResumeLayout(false);
@@ -126,12 +131,12 @@
 
         #endregion
 
-        private Label txtD;
-        private Label label2;
-        private Label label3;
+        private Label label1;
         private TextBox txtDia;
+        private Label label2;
         private TextBox txtMes;
-        private TextBox txtAño;
+        private Label Lablel33;
+        private TextBox txtAnyo;
         private Button btnCalcularDiaNacimiento;
         private Label lblDiaSemana;
     }

@@ -16,11 +16,12 @@ namespace FundamentosNetCore
         {
             InitializeComponent();
         }
+
         private void btnSumarNumeros_Click(object sender, EventArgs e)
         {
-            int numb1 = int.Parse(txtNumero1.Text);
-            int numb2 = int.Parse(txtNumero2.Text);
-            int suma = numb1 + numb2;
+            int num1 = int.Parse(this.txtNumero1.Text);
+            int num2 = int.Parse(this.txtNumero2.Text);
+            int suma = num1 + num2;
             this.lblResultado.Text = suma.ToString();
         }
     }
