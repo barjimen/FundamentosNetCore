@@ -23,8 +23,7 @@ namespace FundamentosNetCore
             foreach (CheckBox check in this.panel1.Controls)
             {
                 this.checkList.Add(check);
-                if (check.Checked )
-                    check.Text += SumarCheck;
+                check.CheckedChanged += SumarCheck;
             }
         }
 
@@ -32,7 +31,10 @@ namespace FundamentosNetCore
         {
             CheckBox checkBox = (CheckBox)sender;
             int numero = int.Parse(checkBox.Text);
-            this.suma += numero;
+            if( checkBox.Checked )
+                this.suma += numero;
+            else
+                this.suma -= numero;
             this.txtSuma.Text = suma.ToString();
         }
 
