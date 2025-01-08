@@ -36,9 +36,18 @@ namespace FundamentosNetCore
         private void btnEmpleado_Click(object sender, EventArgs e)
         {
             Empleado empleado = new Empleado("Empleado1", "ApellidoEmpleado1");
-            //empleado.Nombre = "Empleado";
-            //empleado.Apellidos = "Empleado";
+            empleado.Nombre = "Empleado";
+            empleado.Apellidos = "Empleado";
             this.lstClases.Items.Add(empleado.GetNombreCompleto());
+            this.lstClases.Items.Add("salario Empleado ");
+            this.lstClases.Items.Add("Vacaciones: " + empleado.GetDiasVacaciones());
+
+            Director dire = new Director();
+            dire.Nombre = "Director";
+            dire.Apellidos = "Director";
+            this.lstClases.Items.Add(dire.GetNombreCompleto());
+            this.lstClases.Items.Add("salario Dire ");
+            this.lstClases.Items.Add("Vacaciones: " + dire.GetDiasVacaciones());
         }
     }
 }

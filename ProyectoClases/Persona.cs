@@ -11,11 +11,10 @@ namespace ProyectoClases
     public enum Paises { España, Francia, Italia, Alemania}
     public class Persona
     {
-        //public Persona()
-        //{
-        //    Debug.WriteLine("Constructor Persona sin parámetros");
-          //  this.Domicilio = new Direcciones();
-        //}
+        public Persona()
+        {
+            Debug.WriteLine("Constructor Persona sin parámetros");
+        }
         public Persona(string nombre, string apellidos)
         {
             Debug.WriteLine("Constructor Persona con 2 parámetros");
