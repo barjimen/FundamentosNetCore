@@ -31,6 +31,7 @@
             label1 = new Label();
             btnPersonas = new Button();
             lstClases = new ListBox();
+            btnEmpleado = new Button();
             SuspendLayout();
             // 
             // label1
@@ -63,11 +64,22 @@
             lstClases.Size = new Size(630, 252);
             lstClases.TabIndex = 2;
             // 
+            // btnEmpleado
+            // 
+            btnEmpleado.Location = new Point(194, 322);
+            btnEmpleado.Name = "btnEmpleado";
+            btnEmpleado.Size = new Size(182, 45);
+            btnEmpleado.TabIndex = 3;
+            btnEmpleado.Text = "Empleado";
+            btnEmpleado.UseVisualStyleBackColor = true;
+            btnEmpleado.Click += btnEmpleado_Click;
+            // 
             // Form20TestClases
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(688, 386);
+            Controls.Add(btnEmpleado);
             Controls.Add(lstClases);
             Controls.Add(btnPersonas);
             Controls.Add(label1);
@@ -84,5 +96,6 @@
         private Label label1;
         private Button btnPersonas;
         private ListBox lstClases;
+        private Button btnEmpleado;
     }
 }
